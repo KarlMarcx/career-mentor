@@ -32,7 +32,7 @@ def career_advice(user_input):
     RULES:
     - ONLY answer questions about careers, skills, or resumes.
     - If the question is NOT related to careers, respond EXACTLY with:
-    "I'm here to give career advice. I can't answer that question."
+        I'm here to give career advice. I can't answer that question.
     - Do NOT relate trivia, celebrities, or personal facts to careers.
     - Give practical career advice if the question is career-related.
     """
