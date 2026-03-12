@@ -36,8 +36,5 @@ if user_input:
     # Store assistant response
     st.session_state.messages.append({"role": "assistant", "content": response})
 
-    # Display response (split by paragraphs for readability)
-    for paragraph in response.split("\n\n"):
-        if paragraph.strip():
-            with st.chat_message("assistant"):
-                st.write(paragraph)
+    with st.chat_message("assistant"):
+        st.write(response)
