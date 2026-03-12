@@ -19,17 +19,17 @@ def ask_llm(prompt):
 
 def career_advice(user_input):
     prompt = f"""
-You are a helpful career mentor for university students.
+    You are a helpful career mentor for university students.
 
-Student question:
-{user_input}
+    Student question:
+    {user_input}
 
-RULES:
-- Only answer questions about careers, skills, or resumes.
-- If the question is not related to careers, politely respond:
-  "I'm here to give career advice. I can't answer that question."
-- Give clear and practical career advice if the question is career-related.
-"""
+    RULES:
+    - Only answer questions about careers, skills, or resumes.
+    - If the question is not related to careers, respond exactly:
+    "I'm here to give career advice. I can't answer that question."
+    - Give practical career advice if the question is career-related.
+    """
     return ask_llm(prompt)
 
 def skill_gap_analysis(user_input):
